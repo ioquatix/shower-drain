@@ -1,6 +1,6 @@
 a = 137.5;
-od = 60;
-h = 20;
+od = 62;
+h = 80;
 $fn = 8*6;
 
 union() {
@@ -11,7 +11,7 @@ union() {
       translate([0, 0, -0.5]) cylinder(h=5,d=od-8);
       
       for (r = [17:1:od*3])
-        rotate([0, 0, r*a]) translate([r/6, 0, -0.5]) cylinder(h=5,d=(r+30)/od*1.5);
+        rotate([0, 0, r*a]) translate([r/6, 0, -0.5]) cylinder(h=5,d=(r+30)/od*1.4);
     }
     
     cylinder(h=5,d=4);
